@@ -1,0 +1,1406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libis/font-awesome/6.0.0-beta3/css/all.min.css"
+   integrity="sha512-Fo3rlrzj/k7ujtnHg4CG2D7kSs0v4LLaw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+   crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./styles/output.css"/>
+
+   <link rel="icon"
+   type="image/x-icon"
+    href="fotos/android-icon-144x144.png"
+    
+      >
+    <title>Biblioteca Bar</title>
+
+    <style>
+.whatsapp-icon {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 10vw;
+            max-width: 60px;
+            min-width: 40px;
+            border-radius: 50%;
+            border: 2px solid #f8f6f3fb;
+            background-color: rgb(19, 13, 13);
+            z-index: 1000;
+            cursor: pointer;
+        }
+
+    </style>
+   
+</head>
+<body>
+
+    <div class="local">
+        <a href="https://wa.me/5537999635580" target="_blank">
+            <img src="fotos/whatsapp.png" alt="WhatsApp_API" class="whatsapp-icon" />
+        </a>
+
+    <header class="w-full h[420px] bg-zinc-900 bg-home bg-cover bg-centers ">
+
+     <div class="w-full h-full flex flex-col justify-center items-center">
+       <img 
+       src="./fotos/logo2.png"
+       alt="logo barbuguer"
+       class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200 "
+       />
+       <h1 class="text-3x1 mt-4 mb-2 font-bold text-white">Biblioteca Bar</h1>
+       <apan class="text-white font-medium"></apan>
+
+       <div class="bg-green-600 px-4 py-1 rounded-lg mt-5 mb-5" id="botao-verde">
+         <span class="text-white font-medium">seg a dom - 18:00 as 00:00</span>
+       </div>
+
+     </div>
+    </header>
+
+     <h2 class="text-2x1 md:text-3x1 font-bold text-center mt-9 mb-6">
+        Conheça nosso menu
+
+     </h2>
+
+     <div class="mx-auto max-w-7xl  px-2 my-2">
+        <h2 class="font-bold text-3xl">
+           Artesanais
+        </h2>
+    </div>
+
+      <div id="menu"> 
+
+        <main class="grid grid-cols-1 md:grid-cols-2  gap-7 md:g ap-10 mx-auto max-w-7xl px-2 mb-16">
+       
+            <div class="flex gap-2">
+              <img 
+              src="./fotos/fotodelanche1.jpg"
+              alt="hamburguer duplo bacon"
+              class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300 "
+              />
+              <div>
+                <p class="font-bold">hamburguer duplo bacon</p>
+                <p class="text-sm">Dois suculentos burguer, pao levinho, queijo, molhos, alface, tomate e milho. </p>
+                <div  class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$ 30.50</p>
+                    <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="hamburguer duplo bacon"
+                        data-price="30.50"
+                    >
+                    <i class="fa fa-cart-plus text-lg text-white"></i>    
+                        
+                    </button>
+                </div> 
+              </div>
+            </div>
+
+<div class="flex gap-2">
+    <img 
+    src="./fotos/fotolanche2.jpg"
+    alt="hamburguer smach"
+    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+    />
+    <div>
+      <p class="font-bold">hamburguer smach</p>
+      <p class="text-sm">Dois suculentos burguer, pao levinho, queijo, molhos, alface, tomate e milho. </p>
+      <div  class="flex items-center gap-2 justify-between mt-3">
+          <p class="font-bold text-lg">R$ 29.00</p>
+          <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="hamburguer smach"
+              data-price="29.00"
+          >
+          <i class="fa fa-cart-plus text-lg text-white"></i>    
+              
+          </button>
+      </div> 
+    </div>
+  </div>
+
+<div class="flex gap-2">
+    <img 
+    src="./fotos/fotolanche3.jpg"
+    alt="hamburguer triplo"
+    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+    />
+    <div>
+      <p class="font-bold">hamburguer triplo</p>
+      <p class="text-sm">Dois suculentos burguer, pao levinho, queijo, molhos, alface, tomate e milho. </p>
+      <div  class="flex items-center gap-2 justify-between mt-3">
+          <p class="font-bold text-lg">R$ 34.90</p>
+          <button 
+              class="bg-gray-900 px-5 rounded add-to-cart-btn"
+              data-name="hamburguer triplo"
+              data-price="34.90"
+          >
+          <i class="fa fa-cart-plus text-lg text-white"></i>    
+              
+          </button>
+      </div> 
+    </div>
+  </div>
+
+<div class="flex gap-2">
+<img 
+src="./fotos/fotolanche4.jpg"
+alt="hamburguer salada"
+class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+/>
+<div>
+    <p class="font-bold">hamburguer salada</p>
+    <p class="text-sm">Dois suculentos burguer, pao levinho, queijo, molhos, alface, tomate e milho. </p>
+    <div  class="flex items-center gap-2 justify-between mt-3">
+        <p class="font-bold text-lg">R$ 23.90</p>
+        <button 
+            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+            data-name="hamburguer salada"
+            data-price="23.90"
+        >
+        <i class="fa fa-cart-plus text-lg text-white"></i>    
+            
+        </button>
+    </div> 
+</div>
+</div>
+
+<div class="flex gap-2">
+    <img 
+    src="./fotos/imagemN.jpeg"
+    alt="hamburguer salada"
+    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+    />
+    <div>
+        <p class="font-bold">Smash</p>
+        <p class="text-sm"> PAO DE BRIOCHE, SMASH BOVINO DE 100G, CHEDDAR CREME. </p>
+        <div  class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$ 16.00</p>
+            <button 
+                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                data-name="hamburguer salada"
+                data-price="23.90"
+            >
+            <i class="fa fa-cart-plus text-lg text-white"></i>    
+                
+            </button>
+        </div> 
+    </div>
+    </div>
+
+    <div class="flex gap-2">
+        <img 
+        src="./fotos/imagemN.jpeg"
+        alt="hamburguer salada"
+        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+        />
+        <div>
+            <p class="font-bold"> BIBLIOTECA Smash</p>
+            <p class="text-sm"> PAO DE BRIOCHE, SMASH BOVINO DE 100G,BACON, CHEDDAR CREME. </p>
+            <div  class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 19.00</p>
+                <button 
+                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                    data-name="hamburguer salada"
+                    data-price="23.90"
+                >
+                <i class="fa fa-cart-plus text-lg text-white"></i>    
+                    
+                </button>
+            </div> 
+        </div>
+        </div>
+
+        <div class="flex gap-2">
+            <img 
+            src="./fotos/imagemN.jpeg"
+            alt="hamburguer salada"
+            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+            />
+            <div>
+                <p class="font-bold">BIBLIOTECA CHICKEN</p>
+                <p class="text-sm"> Pão de brioche, hambúrguer de frango 180g, bacon, muçarela, alface, tomate, cebola roxa e catupiry. </p>
+                <div  class="flex items-center gap-2 justify-between mt-3">
+                    <p class="font-bold text-lg">R$ 28.00</p>
+                    <button 
+                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                        data-name="hamburguer salada"
+                        data-price="23.90"
+                    >
+                    <i class="fa fa-cart-plus text-lg text-white"></i>    
+                        
+                    </button>
+                </div> 
+            </div>
+            </div>
+
+            <div class="flex gap-2">
+                <img 
+                src="./fotos/imagemN.jpeg"
+                alt="hamburguer salada"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+                <div>
+                    <p class="font-bold">BIBLIOTECA BÁSICO</p>
+                    <p class="text-sm"> Pão de brioche, hambúrguer bovino 180g, 2 queijos prato, alface, tomate, cebola roxa.  </p>
+                    <div  class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 26.00</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="hamburguer salada"
+                            data-price="23.90"
+                        >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>    
+                            
+                        </button>
+                    </div> 
+                </div>
+                </div>
+
+                <div class="flex gap-2">
+                    <img 
+                    src="./fotos/imagemN.jpeg"
+                    alt="hamburguer salada"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                    />
+                    <div>
+                        <p class="font-bold">BIBLIOTECA CHEDDAR</p>
+                        <p class="text-sm"> Pão de brioche, hambúrguer bovino 180g, queijo empanado, muçarela, bacon em fatia, alface, tomate, cebola roxa.  </p>
+                        <div  class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 29.00</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="hamburguer salada"
+                                data-price="23.90"
+                            >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                
+                            </button>
+                        </div> 
+                    </div>
+                    </div>
+
+                    <div class="flex gap-2">
+                        <img 
+                        src="./fotos/imagemN.jpeg"
+                        alt="hamburguer salada"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+                        <div>
+                            <p class="font-bold">BIBLIOTECA BACON</p>
+                            <p class="text-sm"> ão de brioche, hambúrguer bovino 180g, 2 fatias de queijo muçarela, bacon em fatia, barbecue, alface, tomate.  </p>
+                            <div  class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg">R$ 28.00</p>
+                                <button 
+                                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                    data-name="hamburguer salada"
+                                    data-price="23.90"
+                                >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                    
+                                </button>
+                            </div> 
+                        </div>
+                        </div>
+
+                        <div class="flex gap-2">
+                            <img 
+                            src="./fotos/imagemN.jpeg"
+                            alt="hamburguer salada"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                            />
+                            <div>
+                                <p class="font-bold">BIBLIOTECA EGG</p>
+                                <p class="text-sm"> Pão de brioche, hambúrguer bovino 180g, 2 ovos, cebola roxa, muçarela, alface, tomate.  </p>
+                                <div  class="flex items-center gap-2 justify-between mt-3">
+                                    <p class="font-bold text-lg">R$ 29.00</p>
+                                    <button 
+                                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                        data-name="hamburguer salada"
+                                        data-price="23.90"
+                                    >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                        
+                                    </button>
+                                </div> 
+                            </div>
+                            </div>
+
+                            <div class="flex gap-2">
+                                <img 
+                                src="./fotos/imagemN.jpeg"
+                                alt="hamburguer salada"
+                                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                />
+                                <div>
+                                    <p class="font-bold">BIBLIOTECA ONION RING</p>
+                                    <p class="text-sm"> Pão de brioche, hambúrguer bovino 180g, cheddar creme, farofa de bacon, anel de cebola, alface, tomate.  </p>
+                                    <div  class="flex items-center gap-2 justify-between mt-3">
+                                        <p class="font-bold text-lg">R$ 27.00</p>
+                                        <button 
+                                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                            data-name="hamburguer salada"
+                                            data-price="23.90"
+                                        >
+                                        <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                            
+                                        </button>
+                                    </div> 
+                                </div>
+                                </div>
+
+                                <div class="flex gap-2">
+                                    <img 
+                                    src="./fotos/imagemN.jpeg"
+                                    alt="hamburguer salada"
+                                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                    />
+                                    <div>
+                                        <p class="font-bold">BIBLIOTECA CHEDDAR</p>
+                                        <p class="text-sm"> Pão de brioche, hambúrguer bovino 180g, cheddar creme, cebola caramelizada, farofa de bacon, alface, tomate.  </p>
+                                        <div  class="flex items-center gap-2 justify-between mt-3">
+                                            <p class="font-bold text-lg">R$ 29.00</p>
+                                            <button 
+                                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                                data-name="hamburguer salada"
+                                                data-price="23.90"
+                                            >
+                                            <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                                
+                                            </button>
+                                        </div> 
+                                    </div>
+                                    </div>
+
+                                    <div class="flex gap-2">
+                                        <img 
+                                        src="./fotos/imagemN.jpeg"
+                                        alt="hamburguer salada"
+                                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                        />
+                                        <div>
+                                            <p class="font-bold">BIBLIOTECA ESPECIAL</p>
+                                            <p class="text-sm"> Pão de brioche, hambúrguer bovino 180g, carne seca, cheddar fatia, cream cheese, alface, tomate.  </p>
+                                            <div  class="flex items-center gap-2 justify-between mt-3">
+                                                <p class="font-bold text-lg">R$ 32.00</p>
+                                                <button 
+                                                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                                    data-name="hamburguer salada"
+                                                    data-price="23.90"
+                                                >
+                                                <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                                    
+                                                </button>
+                                            </div> 
+                                        </div>
+                                        </div>
+
+                                        <div class="flex gap-2">
+                                            <img 
+                                            src="./fotos/imagemN.jpeg"
+                                            alt="hamburguer salada"
+                                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                            />
+                                            <div>
+                                                <p class="font-bold">BIBLIOTECA DUPLO</p>
+                                                <p class="text-sm"> Pão de brioche, 2 hambúrgueres bovinos 180g, bacon fatiado, ovo, 2 fatias de muçarela, catupiry, cebola roxa, alface, tomate.   </p>
+                                                <div  class="flex items-center gap-2 justify-between mt-3">
+                                                    <p class="font-bold text-lg">R$ 38.00</p>
+                                                    <button 
+                                                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                                        data-name="hamburguer salada"
+                                                        data-price="23.90"
+                                                    >
+                                                    <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                                        
+                                                    </button>
+                                                </div> 
+                                            </div>
+                                            </div>
+
+        </main>
+
+        <div class="mx-auto max-w-7xl  px-2 my-2">
+            <h2 class="font-bold text-3xl">
+               Tradicionais 
+            </h2>
+        </div>
+        <main class="grid grid-cols-1 md:grid-cols-2  gap-7 md:g ap-10 mx-auto max-w-7xl px-2 mb-16">
+
+                                            <div class="flex gap-2">
+                                                <img 
+                                                src="./fotos/imagemN.jpeg"
+                                                alt="hamburguer salada"
+                                                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                                />
+                                                <div>
+                                                    <p class="font-bold">MISTO</p>
+                                                    <p class="text-sm"> Pão, 3 fatias de presunto, 2 fatias de muçarela.   </p>
+                                                    <div  class="flex items-center gap-2 justify-between mt-3">
+                                                        <p class="font-bold text-lg">R$ 9.00</p>
+                                                        <button 
+                                                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                                            data-name="hamburguer salada"
+                                                            data-price="23.90"
+                                                        >
+                                                        <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                                            
+                                                        </button>
+                                                    </div> 
+                                                </div>
+                                                </div>
+
+                                                <div class="flex gap-2">
+                                                    <img 
+                                                    src="./fotos/imagemN.jpeg"
+                                                    alt="hamburguer salada"
+                                                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                                    />
+                                                    <div>
+                                                        <p class="font-bold">X - BURGUER</p>
+                                                        <p class="text-sm"> Pão, alface, tomate, 2 bifes de hambúrgueres industrial, presunto, muçarela.   </p>
+                                                        <div  class="flex items-center gap-2 justify-between mt-3">
+                                                            <p class="font-bold text-lg">R$ 15.00</p>
+                                                            <button 
+                                                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                                                data-name="hamburguer salada"
+                                                                data-price="23.90"
+                                                            >
+                                                            <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                                                
+                                                            </button>
+                                                        </div> 
+                                                    </div>
+                                                    </div>
+
+                                                    <div class="flex gap-2">
+                                                        <img 
+                                                        src="./fotos/imagemN.jpeg"
+                                                        alt="hamburguer salada"
+                                                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                                        />
+                                                        <div>
+                                                            <p class="font-bold">X EGG</p>
+                                                            <p class="text-sm"> Pão, alface, tomate, 2 bifes de hambúrgueres industrial, presunto, muçarela, ovo.   </p>
+                                                            <div  class="flex items-center gap-2 justify-between mt-3">
+                                                                <p class="font-bold text-lg">R$ 17.00</p>
+                                                                <button 
+                                                                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                                                    data-name="hamburguer salada"
+                                                                    data-price="23.90"
+                                                                >
+                                                                <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                                                    
+                                                                </button>
+                                                            </div> 
+                                                        </div>
+                                                        </div>
+
+                                                        <div class="flex gap-2">
+                                                            <img 
+                                                            src="./fotos/imagemN.jpeg"
+                                                            alt="hamburguer salada"
+                                                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                                            />
+                                                            <div>
+                                                                <p class="font-bold">X - BACON</p>
+                                                                <p class="text-sm"> Pão, alface, tomate, 2 bifes de hambúrgueres industrial, presunto, muçarela, bacon.  </p>
+                                                                <div  class="flex items-center gap-2 justify-between mt-3">
+                                                                    <p class="font-bold text-lg">R$ 17.00</p>
+                                                                    <button 
+                                                                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                                                        data-name="hamburguer salada"
+                                                                        data-price="23.90"
+                                                                    >
+                                                                    <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                                                        
+                                                                    </button>
+                                                                </div> 
+                                                            </div>
+                                                            </div>
+
+                                                            <div class="flex gap-2">
+                                                                <img 
+                                                                src="./fotos/imagemN.jpeg"
+                                                                alt="hamburguer salada"
+                                                                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                                                />
+                                                                <div>
+                                                                    <p class="font-bold">X - BACON EGG</p>
+                                                                    <p class="text-sm"> Pão, alface, tomate, 2 bifes de hambúrgueres industrial, presunto, muçarela, ovo, bacon. </p>
+                                                                    <div  class="flex items-center gap-2 justify-between mt-3">
+                                                                        <p class="font-bold text-lg">R$ 21.00</p>
+                                                                        <button 
+                                                                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                                                            data-name="hamburguer salada"
+                                                                            data-price="23.90"
+                                                                        >
+                                                                        <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                                                            
+                                                                        </button>
+                                                                    </div> 
+                                                                </div>
+                                                                </div>
+
+                                                                <div class="flex gap-2">
+                                                                    <img 
+                                                                    src="./fotos/imagemN.jpeg"
+                                                                    alt="hamburguer salada"
+                                                                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                                                    />
+                                                                    <div>
+                                                                        <p class="font-bold">X - MILHO</p>
+                                                                        <p class="text-sm"> Pão, alface, tomate, 2 bifes de hambúrgueres industrial, presunto, muçarela, ovo, milho e batata palha. </p>
+                                                                        <div  class="flex items-center gap-2 justify-between mt-3">
+                                                                            <p class="font-bold text-lg">R$ 22.00</p>
+                                                                            <button 
+                                                                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                                                                data-name="hamburguer salada"
+                                                                                data-price="23.90"
+                                                                            >
+                                                                            <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                                                                
+                                                                            </button>
+                                                                        </div> 
+                                                                    </div>
+                                                                    </div>
+                                                                    <div class="flex gap-2">
+                                                                        <img 
+                                                                        src="./fotos/imagemN.jpeg"
+                                                                        alt="hamburguer salada"
+                                                                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                                                        />
+                                                                        <div>
+                                                                            <p class="font-bold">X - TUDO</p>
+                                                                            <p class="text-sm">  Pão, alface, tomate, 2 bifes de hambúrgueres industrial, presunto, muçarela, bacon, ovo, milho, abacaxi, batata palha e catupiry. </p>
+                                                                            <div  class="flex items-center gap-2 justify-between mt-3">
+                                                                                <p class="font-bold text-lg">R$ 27.00</p>
+                                                                                <button 
+                                                                                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                                                                    data-name="hamburguer salada"
+                                                                                    data-price="23.90"
+                                                                                >
+                                                                                <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                                                                    
+                                                                                </button>
+                                                                            </div> 
+                                                                        </div>
+                                                                        </div>
+
+                                                                        <div class="flex gap-2">
+                                                                            <img 
+                                                                            src="./fotos/imagemN.jpeg"
+                                                                            alt="hamburguer salada"
+                                                                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                                                            />
+                                                                            <div>
+                                                                                <p class="font-bold">X - TUDO LOMBO</p>
+                                                                                <p class="text-sm">  Pão, alface, tomate, lombo, presunto, muçarela, bacon, ovo, milho, abacaxi, batata palha e catupiry. </p>
+                                                                                <div  class="flex items-center gap-2 justify-between mt-3">
+                                                                                    <p class="font-bold text-lg">R$ 29.00</p>
+                                                                                    <button 
+                                                                                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                                                                        data-name="hamburguer salada"
+                                                                                        data-price="23.90"
+                                                                                    >
+                                                                                    <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                                                                        
+                                                                                    </button>
+                                                                                </div> 
+                                                                            </div>
+                                                                            </div>
+                                                                    
+                                                                            <div class="flex gap-2">
+                                                                                <img 
+                                                                                src="./fotos/imagemN.jpeg"
+                                                                                alt="hamburguer salada"
+                                                                                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                                                                />
+                                                                                <div>
+                                                                                    <p class="font-bold">FILÉ</p>
+                                                                                    <p class="text-sm">  Pão, alface, tomate, 3 bifes de frango, presunto, muçarela. </p>
+                                                                                    <div  class="flex items-center gap-2 justify-between mt-3">
+                                                                                        <p class="font-bold text-lg">R$ 17.00</p>
+                                                                                        <button 
+                                                                                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                                                                            data-name="hamburguer salada"
+                                                                                            data-price="23.90"
+                                                                                        >
+                                                                                        <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                                                                            
+                                                                                        </button>
+                                                                                    </div> 
+                                                                                </div>
+                                                                                </div>
+
+                                                                                <div class="flex gap-2">
+                                                                                    <img 
+                                                                                    src="./fotos/imagemN.jpeg"
+                                                                                    alt="hamburguer salada"
+                                                                                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                                                                    />
+                                                                                    <div>
+                                                                                        <p class="font-bold">FILÉ EGG</p>
+                                                                                        <p class="text-sm">  Pão, alface, tomate, 3 bifes de frango, presunto, muçarela, ovo. </p>
+                                                                                        <div  class="flex items-center gap-2 justify-between mt-3">
+                                                                                            <p class="font-bold text-lg">R$ 19.00</p>
+                                                                                            <button 
+                                                                                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                                                                                data-name="hamburguer salada"
+                                                                                                data-price="23.90"
+                                                                                            >
+                                                                                            <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                                                                                
+                                                                                            </button>
+                                                                                        </div> 
+                                                                                    </div>
+                                                                                    </div>
+
+                                                                                    <div class="flex gap-2">
+                                                                                        <img 
+                                                                                        src="./fotos/imagemN.jpeg"
+                                                                                        alt="hamburguer salada"
+                                                                                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                                                                        />
+                                                                                        <div>
+                                                                                            <p class="font-bold">FILÉ BACON</p>
+                                                                                            <p class="text-sm">   Pão, alface, tomate, 3 bifes de frango, presunto, muçarela, bacon, batata palha. </p>
+                                                                                            <div  class="flex items-center gap-2 justify-between mt-3">
+                                                                                                <p class="font-bold text-lg">R$ 22.00</p>
+                                                                                                <button 
+                                                                                                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                                                                                    data-name="hamburguer salada"
+                                                                                                    data-price="23.90"
+                                                                                                >
+                                                                                                <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                                                                                    
+                                                                                                </button>
+                                                                                            </div> 
+                                                                                        </div>
+                                                                                        </div>
+
+                                                                                        <div class="flex gap-2">
+                                                                                            <img 
+                                                                                            src="./fotos/imagemN.jpeg"
+                                                                                            alt="hamburguer salada"
+                                                                                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                                                                            />
+                                                                                            <div>
+                                                                                                <p class="font-bold">FILÉ TUDO</p>
+                                                                                                <p class="text-sm">   Pão, alface, tomate, 3 bifes de frango, presunto, muçarela, bacon, ovo, milho, batata palha, abacaxi e catupiry. </p>
+                                                                                                <div  class="flex items-center gap-2 justify-between mt-3">
+                                                                                                    <p class="font-bold text-lg">R$ 30.00</p>
+                                                                                                    <button 
+                                                                                                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                                                                                        data-name="hamburguer salada"
+                                                                                                        data-price="23.90"
+                                                                                                    >
+                                                                                                    <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                                                                                        
+                                                                                                    </button>
+                                                                                                </div> 
+                                                                                            </div>
+                                                                                            </div>
+
+                                                                                            <div class="flex gap-2">
+                                                                                                <img 
+                                                                                                src="./fotos/imagemN.jpeg"
+                                                                                                alt="hamburguer salada"
+                                                                                                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                                                                                />
+                                                                                                <div>
+                                                                                                    <p class="font-bold">BIBLIOTECA</p>
+                                                                                                    <p class="text-sm"> Pão, alface, tomate, 3 bifes de frango, 2 bifes de hambúrgueres industrial, presunto, muçarela, bacon, 2 ovos, milho, batata palha, abacaxi e catupiry. </p>
+                                                                                                    <div  class="flex items-center gap-2 justify-between mt-3">
+                                                                                                        <p class="font-bold text-lg">R$ 3.00</p>
+                                                                                                        <button 
+                                                                                                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                                                                                            data-name="hamburguer salada"
+                                                                                                            data-price="23.90"
+                                                                                                        >
+                                                                                                        <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                                                                                            
+                                                                                                        </button>
+                                                                                                    </div> 
+                                                                                                </div>
+                                                                                                </div>
+
+        </main>
+
+        <div class="mx-auto max-w-7xl  px-2 my-2">
+            <h2 class="font-bold text-3xl">
+               Adicionar/Montar seu sanduiche
+            </h2>
+        </div>
+   
+        <main class=" md:grid-cols-3  gap-7 md:g ap-10 mx-auto max-w-7xl px-2 mb-16">
+           
+            <div  class="flex items-center gap-2  mt-3">
+            
+                <p class="font-bold text-lg">Pao</p>            
+                <p class="font-bold text-lg">R$ 3.00</p>
+            </div> 
+            
+            <div  class="flex items-center gap-2  mt-3">
+            
+                <p class="font-bold text-lg">Pao BRIOCHE</p>            
+                <p class="font-bold text-lg">R$ 3.50</p>
+            </div> 
+              
+            <div  class="flex items-center gap-2  mt-3">
+            
+                <p class="font-bold text-lg">salada</p>            
+                <p class="font-bold text-lg">R$ 1.50</p>
+            </div>
+
+            <div  class="flex items-center gap-2  mt-3">
+            
+                <p class="font-bold text-lg">presunto</p>            
+                <p class="font-bold text-lg">R$ 2.50</p>
+            </div> 
+
+            <div  class="flex items-center gap-2  mt-3">
+            
+                <p class="font-bold text-lg">Mucarela</p>            
+                <p class="font-bold text-lg">R$ 2.50</p>
+            </div> 
+
+            <div  class="flex items-center gap-2  mt-3">
+            
+                <p class="font-bold text-lg">bacon</p>            
+                <p class="font-bold text-lg">R$ 4.00</p>
+            </div> 
+
+            <div  class="flex items-center gap-2  mt-3">
+            
+                <p class="font-bold text-lg">Queijo Prato</p>            
+                <p class="font-bold text-lg">R$ 3.00</p>
+            </div> 
+
+            <div  class="flex items-center gap-2  mt-3">
+            
+                <p class="font-bold text-lg">catupiry</p>            
+                <p class="font-bold text-lg">R$ 4.00</p>
+            </div> 
+
+            <div  class="flex items-center gap-2  mt-3">
+            
+                <p class="font-bold text-lg">cheddar</p>            
+                <p class="font-bold text-lg">R$ 4.00</p>
+            </div> 
+
+            <div  class="flex items-center gap-2  mt-3">
+            
+                <p class="font-bold text-lg">hamburguer industrial</p>            
+                <p class="font-bold text-lg">R$ 4.00</p>
+            </div> 
+
+            <div  class="flex items-center gap-2  mt-3">
+            
+                <p class="font-bold text-lg">hamburguer Artesanal 180g</p>            
+                <p class="font-bold text-lg">R$ 9.00</p>
+            </div> 
+
+            <div  class="flex items-center gap-2  mt-3">
+            
+                <p class="font-bold text-lg">hamburguer Artesanal 100g</p>            
+                <p class="font-bold text-lg">R$ 6.00</p>
+            </div> 
+
+            <div  class="flex items-center gap-2  mt-3">
+            
+                <p class="font-bold text-lg">Calabresa</p>            
+                <p class="font-bold text-lg">R$ 4.00</p>
+            </div>
+            
+            <div  class="flex items-center gap-2  mt-3">
+            
+                <p class="font-bold text-lg">File de frango</p>            
+                <p class="font-bold text-lg">R$ 8.00</p>
+            </div> 
+
+            <div  class="flex items-center gap-2  mt-3">
+            
+                <p class="font-bold text-lg">Ovo</p>            
+                <p class="font-bold text-lg">R$ 3.00</p>
+            </div>
+
+            <div  class="flex items-center gap-2  mt-3">
+            
+                <p class="font-bold text-lg">Abacaxi</p>            
+                <p class="font-bold text-lg">R$ 2.00</p>
+            </div> 
+
+            <div  class="flex items-center gap-2  mt-3">
+            
+                <p class="font-bold text-lg">Cebola Roxa</p>            
+                <p class="font-bold text-lg">R$ 2.00</p>
+            </div>
+            
+            <div  class="flex items-center gap-2  mt-3">
+            
+                <p class="font-bold text-lg">milho</p>            
+                <p class="font-bold text-lg">R$ 3.00</p>
+            </div>
+            
+            <div  class="flex items-center gap-2  mt-3">
+            
+                <p class="font-bold text-lg">Batata</p>            
+                <p class="font-bold text-lg">R$ 3.00</p>
+            </div> 
+
+            <div  class="flex items-center gap-2  mt-3">
+            
+                <p class="font-bold text-lg">Cream cheese</p>            
+                <p class="font-bold text-lg">R$ 4.00</p>
+            </div> 
+
+            <div  class="flex items-center gap-2  mt-3">
+            
+                <p class="font-bold text-lg">lombo</p>            
+                <p class="font-bold text-lg">R$ 5.00</p>
+            </div> 
+
+            <div  class="flex items-center gap-2  mt-3">
+            
+                <p class="font-bold text-lg">Cebola Empanada</p>            
+                <p class="font-bold text-lg">R$ 4.00</p>
+            </div> 
+
+            <div  class="flex items-center gap-2  mt-3">
+            
+                <p class="font-bold text-lg">Cebola Caramelizada</p>            
+                <p class="font-bold text-lg">R$ 4.00</p>
+            </div>
+            
+            <div  class="flex items-center gap-2  mt-3">
+            
+                <p class="font-bold text-lg">Anel De Cebola</p>            
+                <p class="font-bold text-lg">R$ 4.00</p>
+            </div> 
+
+            <div  class="flex items-center gap-2  mt-3">
+            
+                <p class="font-bold text-lg">Queijo empanado</p>            
+                <p class="font-bold text-lg">R$ 5.00</p>
+            </div> 
+
+        </main>
+
+        <div class="mx-auto max-w-7xl  px-2 my-2">
+            <h2 class="font-bold text-3xl">
+               Bebidas 
+            </h2>
+        </div>
+
+         <div class="grid grid-cols-1 md:grid-cols-2  gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+            
+            <div class="flex gap-2 w-full">
+                <img 
+                src="./fotos/cocalata.png"
+                alt="coca lata"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+                <div class="w-full">
+                    <p class="font-bold">coca lata</p>
+        
+                    <div  class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 6.00</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="coca lata"
+                            data-price="6.00"
+                        >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>    
+                            
+                        </button>
+                    </div> 
+                </div>
+                </div>
+
+            <div class="flex gap-2 w-full">
+                <img 
+                src="./fotos/guaranalata.jpg"
+                alt="guarana lata"
+                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                />
+                <div class="w-full">
+                    <p class="font-bold">guarana lata</p>
+        
+                    <div  class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 6.00</p>
+                        <button 
+                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                            data-name="guarana lata"
+                            data-price="6.00"
+                        >
+                        <i class="fa fa-cart-plus text-lg text-white"></i>    
+                            
+                        </button>
+                    </div> 
+                </div>
+                </div>
+
+                  <div class="flex gap-2 w-full">
+                    <img 
+                    src="./fotos/fotococa2l.jpeg"
+                    alt="guarana lata"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                    />
+                    <div class="w-full">
+                        <p class="font-bold">Coca cola 2L Normal/Zero</p>
+            
+                        <div  class="flex items-center gap-2 justify-between mt-3">
+                            <p class="font-bold text-lg">R$ 15.00</p>
+                            <button 
+                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                data-name="Coca 2l"
+                                data-price="15.00"
+                            >
+                            <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                
+                            </button>
+                        </div> 
+                    </div>
+                    </div>
+
+                    <div class="flex gap-2 w-full">
+                        <img 
+                        src="./fotos/guarana2l.jpg"
+                        alt="guarana antartica"
+                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                        />
+                        <div class="w-full">
+                            <p class="font-bold">guarana antartica 2L</p>
+                
+                            <div  class="flex items-center gap-2 justify-between mt-3">
+                                <p class="font-bold text-lg">R$ 15.00</p>
+                                <button 
+                                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                    data-name="guarana2l"
+                                    data-price="15.00"
+                                >
+                                <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                    
+                                </button>
+                            </div> 
+                        </div>
+                        </div>
+
+                        <div class="flex gap-2 w-full">
+                            <img 
+                            src="./fotos/cocakk.jpeg"
+                            alt="coca ks"
+                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                            />
+                            <div class="w-full">
+                                <p class="font-bold">Coca Ks</p>
+                    
+                                <div  class="flex items-center gap-2 justify-between mt-3">
+                                    <p class="font-bold text-lg">R$ 5.00</p>
+                                    <button 
+                                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                        data-name="coca ks"
+                                        data-price="5.00"
+                                    >
+                                    <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                        
+                                    </button>
+                                </div> 
+                            </div>
+                            </div>
+
+                            <div class="flex gap-2 w-full">
+                                <img 
+                                src="./fotos/sucos.jpeg"
+                                alt="suco natural"
+                                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                />
+                                <div class="w-full">
+                                    <p class="font-bold">Suco natural (Laranja ou limao)</p>
+                        
+                                    <div  class="flex items-center gap-2 justify-between mt-3">
+                                        <p class="font-bold text-lg">R$ 7.00</p>
+                                        <button 
+                                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                            data-name="suco natural"
+                                            data-price="7.00"
+                                        >
+                                        <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                            
+                                        </button>
+                                    </div> 
+                                </div>
+                                </div>
+
+                                <div class="flex gap-2 w-full">
+                                    <img 
+                                    src="./fotos/sucos.jpeg"
+                                    alt="suco de polpa"
+                                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                    />
+                                    <div class="w-full">
+                                        <p class="font-bold">Suco de polpa de Marchi c/agua</p>
+                                        <p class="font-bold">(Maracuja, Morango, Abacaxi c/Hortela)</p>
+
+                                        <div  class="flex items-center gap-2 justify-between mt-3">
+                                            <p class="font-bold text-lg">R$ 8.00</p>
+
+                                            <button 
+                                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                                data-name="coca ks"
+                                                data-price="5.00"
+                                            >
+                                            <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                                
+                                            </button>
+                                        </div> 
+                                        <p class="font-bold text-lg">com leite ou leite condensado (R$ 10.00 )</p>
+                                    </div>
+                                    </div>
+
+                                    <div class="flex gap-2 w-full">
+                                        <img 
+                                        src="./fotos/bud600ml.jpeg"
+                                        alt="suco de polpa"
+                                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                        />
+                                        <div class="w-full">
+                                            <p class="font-bold text-lg">budweiser 600ml </p>
+
+                                            <div  class="flex items-center gap-2 justify-between mt-1">
+                                                <p class="font-bold text-lg"> R$ 13.00</p>
+
+                                                <button 
+                                                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                                    data-name="coca ks"
+                                                    data-price="5.00"
+                                               <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                                
+                                                </button>
+                                                
+                                            </div> 
+                                        
+                                            <p class="font-bold text-lg mt-3"> long Neck</p>
+                                            <p class="font-bold text-lg "> R$ 8.00</p>
+                                            
+                                            <p class="font-bold text-lg mt-2">budweiser Litrao</p>
+                                            <p class="font-bold text-lg">R$ 16.00</p>
+                                        
+                                        </div> 
+                                        </div>                  
+
+                                        <div class="flex gap-2 w-full">
+                                            <img 
+                                            src="./fotos/skol_brahma.png"
+                                            alt="suco de polpa"
+                                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                            />
+                                            <div class="w-full">
+                                                <p class="font-bold text-lg">Skol/Brahma 600ml </p>
+
+                                                <div  class="flex items-center gap-2 justify-between mt-1">
+                                                    <p class="font-bold text-lg"> R$ 12.00</p>
+
+                                                    <button 
+                                                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                                        data-name="coca ks"
+                                                        data-price="5.00"
+                                                   <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                                    
+                                                    </button>
+                                                    
+                                                </div> 
+
+                                                <p class="font-bold text-lg mt-2"> Litrao</p>
+                                                <p class="font-bold text-lg">R$ 14.00</p>
+                                            
+                                            </div> 
+                                            </div>                  
+
+                                            <div class="flex gap-2 w-full">
+                                                <img 
+                                                src="./fotos/original.png"
+                                                alt="suco de polpa"
+                                                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                                />
+                                                <div class="w-full">
+                                                    <p class="font-bold text-lg">Original 600ml </p>
+
+                                                    <div  class="flex items-center gap-2 justify-between mt-1">
+                                                        <p class="font-bold text-lg"> R$ 13.00</p>
+
+                                                        <button 
+                                                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                                            data-name="coca ks"
+                                                            data-price="5.00"
+                                                       <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                                        
+                                                        </button>
+                                                        
+                                                    </div> 
+
+                                                    <p class="font-bold text-lg mt-2"> Litrao</p>
+                                                    <p class="font-bold text-lg">R$ 17.00</p>
+                                                
+                                                </div> 
+                                                </div>                  
+                                                <div class="flex gap-2 w-full">
+                                                    <img 
+                                                    src="./fotos/stella.png"
+                                                    alt="suco de polpa"
+                                                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                                    />
+                                                    <div class="w-full">
+                                                        <p class="font-bold text-lg">Stella 600ml </p>
+
+                                                        <div  class="flex items-center gap-2 justify-between mt-1">
+                                                            <p class="font-bold text-lg"> R$ 14.00</p>
+
+                                                            <button 
+                                                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                                                data-name="coca ks"
+                                                                data-price="5.00"
+                                                           <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                                            
+                                                            </button>
+                                                            
+                                                        </div> 
+                                                    
+                                                        <p class="font-bold text-lg mt-3"> long Neck</p>
+                                                        <p class="font-bold text-lg "> R$ 8.00</p>
+
+                                                    </div> 
+                                                    </div>       
+                                                    
+                                                    <div class="flex gap-2 w-full">
+                                                        <img 
+                                                        src="./fotos/spaten.png"
+                                                        alt="suco de polpa"
+                                                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                                        />
+                                                        <div class="w-full">
+                                                            <p class="font-bold text-lg">Spaten 600ml </p>
+
+                                                            <div  class="flex items-center gap-2 justify-between mt-1">
+                                                                <p class="font-bold text-lg"> R$ 13.00</p>
+
+                                                                <button 
+                                                                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                                                    data-name="coca ks"
+                                                                    data-price="5.00"
+                                                               <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                                                
+                                                                </button>
+                                                                
+                                                            </div> 
+                                                        
+                                                            <p class="font-bold text-lg mt-3"> long Neck</p>
+                                                            <p class="font-bold text-lg "> R$ 8.00</p>
+
+                                                        </div> 
+                                                        </div>     
+                                                        
+                                                        <div class="flex gap-2 w-full">
+                                                            <img 
+                                                            src="./fotos/skolbeats.jpeg"
+                                                            alt="suco de polpa"
+                                                            class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                                            />
+                                                            <div class="w-full">
+                                                                <p class="font-bold text-lg">skol beats  (long Neck) </p>
+
+                                                                <div  class="flex items-center gap-2 justify-between mt-1">
+                                                                    <p class="font-bold text-lg"> R$ 8.00</p>
+
+                                                                    <button 
+                                                                        class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                                                        data-name="coca ks"
+                                                                        data-price="5.00"
+                                                                   <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                                                    
+                                                                    </button>
+                                                                    
+                                                                </div> 
+                                                            </div> 
+                                                            </div>        
+                                                            
+                                                            <div class="flex gap-2 w-full">
+                                                                <img 
+                                                                src="./fotos/corona.jpeg"
+                                                                alt="suco de polpa"
+                                                                class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                                                />
+                                                                <div class="w-full">
+                                                                    <p class="font-bold text-lg">Corona (long Neck) </p>
+
+                                                                    <div  class="flex items-center gap-2 justify-between mt-1">
+                                                                        <p class="font-bold text-lg"> R$ 10.00</p>
+
+                                                                        <button 
+                                                                            class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                                                            data-name="coca ks"
+                                                                            data-price="5.00"
+                                                                       <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                                                        
+                                                                        </button>
+                                                                        
+                                                                    </div> 
+                                                                </div> 
+                                                                </div>        
+                                                                <div class="flex gap-2 w-full">
+                                                                    <img 
+                                                                    src="./fotos/ice_syn.jpeg"
+                                                                    alt="suco de polpa"
+                                                                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                                                    />
+                                                                    <div class="w-full">
+                                                                        <p class="font-bold text-lg">ice syn  (long Neck) </p>
+
+                                                                        <div  class="flex items-center gap-2 justify-between mt-1">
+                                                                            <p class="font-bold text-lg"> R$ 7.00</p>
+
+                                                                            <button 
+                                                                                class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                                                                data-name="coca ks"
+                                                                                data-price="5.00"
+                                                                           <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                                                            
+                                                                            </button>
+                                                                            
+                                                                        </div> 
+                                                                    </div> 
+                                                                    </div>   
+                                                                     
+                                                                    <div class="flex gap-2 w-full">
+                                                                        <img 
+                                                                        src="./fotos/ice_cabare.jpeg"
+                                                                        alt="suco de polpa"
+                                                                        class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300"
+                                                                        />
+                                                                        <div class="w-full">
+                                                                            <p class="font-bold text-lg">Ice cabare  (long Neck) </p>
+
+                                                                            <div  class="flex items-center gap-2 justify-between mt-1">
+                                                                                <p class="font-bold text-lg"> R$ 9.00</p>
+
+                                                                                <button 
+                                                                                    class="bg-gray-900 px-5 rounded add-to-cart-btn"
+                                                                                    data-name="coca ks"
+                                                                                    data-price="5.00"
+                                                                               <i class="fa fa-cart-plus text-lg text-white"></i>    
+                                                                                
+                                                                                </button>
+                                                                                
+                                                                            </div> 
+                                                                        </div> 
+                                                                        </div>        
+         </div>
+
+<div class="mx-auto max-w-7xl px-2 my-2">
+    <h2 class="font-bold text-3xl">Doses</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16" id="menu">
+    
+    <div class="flex gap-2 w-full">
+        <img src="./fotos/redbull.jpg" alt="Redbull" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+        <div class="w-full">
+            <p class="font-bold">Redbull</p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 13.00</p>
+                <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Redbull" data-price="10.00">
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex gap-2 w-full">
+        <img src="./fotos/red_label.jpg" alt="Blue Label" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+        <div class="w-full">
+            <p class="font-bold">red Label</p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 15.00</p>
+                <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Blue Label" data-price="300.00">
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex gap-2 w-full">
+        <img src="./fotos/blacklabel.jpg" alt="Black Label" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+        <div class="w-full">
+            <p class="font-bold">Black Label</p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 20.00</p>
+                <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Black Label" data-price="250.00">
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex gap-2 w-full">
+        <img src="./fotos/vodka_absolut.jpg" alt="Whisky" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+        <div class="w-full">
+            <p class="font-bold">vodka</p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 10.00</p>
+                <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Whisky" data-price="150.00">
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex gap-2 w-full">
+        <img src="./fotos/caipirinha.jpg" alt="Whisky" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+        <div class="w-full">
+            <p class="font-bold">caipirinha</p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 12.00</p>
+                <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Whisky" data-price="150.00">
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+        </div>
+    </div> 
+
+    <div class="flex gap-2 w-full">
+        <img src="./fotos/caipcerva.jpg" alt="Whisky" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+        <div class="w-full">
+            <p class="font-bold">caipcerva (Cozumel)</p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 18.00</p>
+                <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Whisky" data-price="150.00">
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex gap-2 w-full">
+        <img src="./fotos/caipfruta.jpg " alt="Whisky" class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+        <div class="w-full">
+            <p class="font-bold">Caipfruta (limao, Morango, Maracuja)</p>
+            <div class="flex items-center gap-2 justify-between mt-3">
+                <p class="font-bold text-lg">R$ 15.00</p>
+                <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Whisky" data-price="150.00">
+                    <i class="fa fa-cart-plus text-lg text-white"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+             
+</div>
+
+      </div>
+
+</style>
+</head>
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+# Dependências
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Arquivos locais do editor e do sistema
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Variáveis de ambiente e segredos
+.env
+.env.*
+!.env.example

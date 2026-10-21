@@ -1,0 +1,17 @@
+PROJETO: BIBLIOTECA BAR
+
+O Biblioteca Bar é um site de divulgação e cardápio digital desenvolvido para apresentar os produtos e informações do estabelecimento. O projeto tem uma página principal com o cardápio, incluindo hambúrgueres e bebidas, com fotos, descrições e preços. Também há ícones de carrinho junto aos produtos e um botão de acesso direto ao WhatsApp para contato.
+
+O site informa o horário de funcionamento — todos os dias, das 18h à meia-noite — e utiliza imagens e logotipos próprios para representar a identidade visual do bar. O projeto também conta com uma página complementar de apresentação, com fotos, informações sobre o estabelecimento e localização no Google Maps.
+
+TECNOLOGIAS UTILIZADAS
+
+- HTML para estruturar as páginas.
+- CSS para personalização visual.
+- Tailwind CSS para estilos e layout responsivo.
+- Node.js e npm para instalar as dependências e gerar o CSS do Tailwind.
+- Bootstrap e Font Awesome em recursos da página complementar.
+
+ESTRUTURA E EXECUÇÃO
+
+O projeto é composto por páginas HTML, arquivos de estilo e uma pasta com imagens do estabelecimento, produtos e elementos visuais. Para recompilar o CSS do Tailwind em modo de desenvolvimento, é necessário instalar as dependências com npm e executar o comando `npm run dev`. Depois, a página do cardápio pode ser aberta no navegador.
